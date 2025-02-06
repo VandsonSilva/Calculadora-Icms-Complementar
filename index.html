@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de ICMS Complementar - Frete</title>
+    <script src="./script.js" defer></script>
+     <link rel="stylesheet" href="styles.css">   
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de ICMS Complementar - Frete</h2>
+        <label>Valor do Frete (R$):</label>
+        <input type="number" id="valorFrete" placeholder="Digite o valor do frete">
+        
+        <label>Alíquota Interna do Estado de Destino (%):</label>
+        <input type="number" id="aliquotaInternaFrete" placeholder="Digite a alíquota interna">
+
+        <label>ICMS destacado (%):</label>
+        <input type="number" id="icmsdestacado" placeholder="digite o valor destacado do icms">
+        
+        <label>Alíquota Interestadual (%):</label>
+        <input type="number" id="aliquotaInterestadualFrete" placeholder="Digite a alíquota interestadual">
+        
+        <button onclick="calcularICMSFrete()">Calcular</button>
+        <p id="resultadoFrete"></p>
+    </div>    
+</body>
+</html>

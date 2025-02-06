@@ -1,0 +1,34 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        label,
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+
+        #resultadoFrete {
+            margin-top: 20px;
+            font-weight: bold;
+        }
