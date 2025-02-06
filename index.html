@@ -5,22 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de ICMS Complementar - Frete</title>
     <script src="./script.js" defer></script>
-     <link rel="stylesheet" href="styles.css">   
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h2>Calculadora de ICMS Complementar - Frete</h2>
+
         <label>Valor do Frete (R$):</label>
         <input type="number" id="valorFrete" placeholder="Digite o valor do frete">
-        
-        <label>Alíquota Interna do Estado de Destino (%):</label>
-        <input type="number" id="aliquotaInternaFrete" placeholder="Digite a alíquota interna">
+
+        <label>Estado de Origem:</label>
+        <select id="opcao" onchange="atualizarRegiao()">
+            <option value="AC">ACRE</option>
+            <option value="AL">ALAGOAS</option>
+            <option value="AP">AMAPÁ</option>
+            <option value="AM">AMAZONAS</option>
+            <option value="BA">BAHIA</option>
+            <option value="CE">CEARÁ</option>
+            <option value="DF">DISTRITO FEDERAL</option>
+            <option value="ES">ESPÍRITO SANTO</option>
+            <option value="GO">GOIÁS</option>
+            <option value="MA">MARANHÃO</option>
+            <option value="MT">MATO GROSSO</option>
+            <option value="MS">MATO GROSSO DO SUL</option>
+            <option value="MG">MINAS GERAIS</option>
+            <option value="PA">PARÁ</option>
+            <option value="PB">PARAÍBA</option>
+            <option value="PR">PARANÁ</option>
+            <option value="PE">PERNAMBUCO</option>
+            <option value="PI">PIAUÍ</option>
+            <option value="RJ">RIO DE JANEIRO</option>
+            <option value="RN">RIO GRANDE DO NORTE</option>
+            <option value="RS">RIO GRANDE DO SUL</option>
+            <option value="RO">RONDÔNIA</option>
+            <option value="RR">RORAIMA</option>
+            <option value="SC">SANTA CATARINA</option>
+            <option value="SP">SÃO PAULO</option>
+            <option value="SE">SERGIPE</option>
+            <option value="TO">TOCANTINS</option>
+        </select>
+
+        <label>Região:</label>
+        <input type="text" id="regiao" readonly>
 
         <label>ICMS destacado (%):</label>
-        <input type="number" id="icmsdestacado" placeholder="digite o valor destacado do icms">
-        
-        <label>Alíquota Interestadual (%):</label>
-        <input type="number" id="aliquotaInterestadualFrete" placeholder="Digite a alíquota interestadual">
+        <input type="number" id="icmsdestacado" placeholder="Digite o valor destacado do ICMS">
         
         <button onclick="calcularICMSFrete()">Calcular</button>
         <p id="resultadoFrete"></p>
