@@ -21,7 +21,10 @@ function calcularICMSFrete() {
     
     const aliquotasInternas = {
         PA: 20.00, DF: 20.00, RJ: 20.00, AM: 20.00, TO: 20.00, RR: 20.00,
-        RO: 19.50, PE: 20.50, BA: 20.50, RN: 18.00, SP: 18.00, MG: 18.00
+        RO: 19.50, PE: 20.50, BA: 20.50, RN: 18.00, SP: 18.00, MG: 18.00,
+        AC: 19.00, PI: 21.00, MA: 20.00, CE: 20.00, ES:17.00, GO: 19.00,
+        MT: 17.00, MS: 17.00, PB: 20.00, PR: 19.50, SC: 17.00, SE: 20.00,
+        AL: 20.00, AP: 18.00
     };
 
     
